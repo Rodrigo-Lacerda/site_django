@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="{% static 'css/style.css' %}" href="style.css" type="text/css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'case-sucesse' %}">Quem usa django</a></li>
+        </ul>
+    </nav>
     <main>
     {% block content %}
-        <!-- <p>sfkjsdklfjklsjflkf</p> -->
+        <!-- Main content -->
     {% endblock %}
     </main>
+
+    <foote>
+        <!-- rodapé -->
+        <p>Todos os direitos reservados</p>
+    </foote>
 </body>
 </html>

@@ -6,24 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="{% static 'css/style.css' %}" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/desktop.css' %}" type="text/css">
 </head>
 <body>
-    <nav>
+    <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <nav id="nav_bar">
         <ul>
             <li><a href="{% url 'index' %}">Inicio</a></li>
             <li><a href="{% url 'case-sucesse' %}">Quem usa django</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="main-content">
     {% block content %}
         <!-- Main content -->
     {% endblock %}
     </main>
 
-    <foote>
+    <footer id="footer">
         <!-- rodapé -->
         <p>Todos os direitos reservados</p>
-    </foote>
+    </footer>
+
+    <script>
+        function clickMenu() {
+            if (nav_bar.style.display == 'block'){
+                nav_bar.style.display = 'none'
+            } else {
+                nav_bar.style.display = 'block'
+            }
+
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    /* nav-bar */
+    #burger {
+        display: none;
+    }
+    #nav_bar {
+        display: block;
+        height: 10vh;
+    }
+    #nav_bar > ul {
+        display: block;
+        text-decoration: none;
+        background-color: aliceblue;
+        text-align: right;
+    }
+    #nav_bar > ul > li {
+        background-color: rebeccapurple;
+        display: inline-block;
+        
+    }
+    #nav_bar > ul > li > a {
+        /* align-items: end; */
+    }
+
+}

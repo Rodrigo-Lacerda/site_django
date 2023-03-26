@@ -1,7 +1,7 @@
 @media screen and (min-width: 1024px) {
     body {
-        background-color: white;
-        color: black;
+        background-color: #0E1117;
+        color: white;
     }
 
     /* nav-bar */
@@ -13,18 +13,28 @@
         height: 10vh;
     }
     #nav_bar > ul {
+        width: 1024px;
         display: block;
         text-decoration: none;
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
         text-align: right;
+        height: 10vh;
+        margin: auto;
     }
     #nav_bar > ul > li {
-        background-color: rebeccapurple;
+        /* background-color: rebeccapurple; */
         display: inline-block;
+        padding-top: 3vh;
         
     }
     #nav_bar > ul > li > a {
-        /* align-items: end; */
+        text-decoration: none;
+    }
+
+    /* Main-content */
+    #main-content {
+        width: 1024px;
+        margin: auto;
     }
 
 }

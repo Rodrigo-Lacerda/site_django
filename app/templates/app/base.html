@@ -15,7 +15,6 @@
     <nav id="nav_bar">
         <ul>
             <li><a href="{% url 'index' %}">Inicio</a></li>
-            <li><a href="{% url 'case-sucesse' %}">Quem usa django</a></li>
         </ul>
     </nav>
     <main id="main-content">
@@ -29,15 +28,7 @@
         <p>Todos os direitos reservados</p>
     </footer>
 
-    <script>
-        function clickMenu() {
-            if (nav_bar.style.display == 'block'){
-                nav_bar.style.display = 'none'
-            } else {
-                nav_bar.style.display = 'block'
-            }
+    <script src="{% static 'js/script.js' %}"></script>
 
-        }
-    </script>
 </body>
 </html>

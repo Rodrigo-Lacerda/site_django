@@ -25,7 +25,6 @@
         /* background-color: rebeccapurple; */
         display: inline-block;
         padding-top: 3vh;
-        
     }
     #nav_bar > ul > li > a {
         text-decoration: none;
@@ -37,4 +36,28 @@
         margin: auto;
     }
 
+    div.div-info {
+        width: 1024px;
+    }
+
+    div.div-info > ul {
+        list-style-type: none;
+    }
+
+    div.div-info > h2 {
+        margin-bottom: 3vh;
+    }
+    div#social > a {
+        height: 3vh;
+        margin: 3px;
+        border-radius: 5px;
+        background-color: #44B78B;
+        color: white;
+        text-decoration: none;
+    }
+    div#social > a:hover {
+        background-color: #338666;
+        text-decoration: underline;
+        color: rgb(203, 248, 199);
+    }
 }

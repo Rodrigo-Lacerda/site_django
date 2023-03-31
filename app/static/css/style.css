@@ -6,6 +6,7 @@
 * a {
     /* color: #3EB88A; */
     color: #20AA6E;
+    font-size: 1.6em;
 }
 * a:hover {
     color: #3EB88A;
@@ -16,9 +17,11 @@
     Roboto, Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
+    font-size: 1.6em;
 }
 * p {
     font-family: 'Palanquin', sans-serif;
+    font-size: 1.6em;
 }
 
 body {
